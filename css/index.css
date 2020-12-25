@@ -1,0 +1,30 @@
+.bs-example{
+  margin: 20px;
+}
+body{
+  background: url(../images/background.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+@font-face{
+  font-family: nguyenanh;
+  src: url(../font/Rustico-V2-Regular.otf);
+  font-weight: 100;
+}
+h1{
+  font-family: nguyenanh;
+}
+form{
+	margin-top: 50px;
+}
+.well{
+	height: 250px;
+}
+.col-md-11, .col-md-1{
+  padding: 0;
+}
+.remove{
+  margin-top: 5px;
+  margin-left: 20px;
+  outline: none;
+}

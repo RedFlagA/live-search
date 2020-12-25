@@ -1,0 +1,436 @@
+ var data = [
+ {
+  "id":"1",
+  "gio":"A1",
+  "name":"Vũ Thành Công",
+  "cod":"2995",
+  "street":["Lí nam đế","Hàng hương","Cửa Đông","Tống Duy Tân","Cấm chỉ","Phùng Hưng","Hà Trung","Ngõ trạm","Nguyễn văn tố","Nguyễn quang bích"," Đường thành"," Hàng điếu","Hàng nón","Bát đàn","Nhà Hỏa","Hàng gà","Bát Sứ","Hàng Phèn","Hàng Bút","Thuốc Bắc","Hàng Vải","Hàng Đồng","Lò Rèn","Cổng Đục","Hàng Cót"]
+},
+{
+  "id":"2",
+  "gio":"A2",
+  "name":"Trần Khắc Tiệp",
+  "cod":"8368",
+  "street":["Phạm Ngũ Lão", "Đặng Thái Thân", "Lê Thánh Tông", "Tràng Tiền","Phạm Sư Mạnh", "Phan Chu Trinh", "Vọng Đức", "Hàng Bài", "Nguyễn Khắc Cần", "Đinh Công Tráng", "Bà triệu [0] 2-140 và [1] 1-85", "Ngô Quyền >19", "Trần Hưng Đạo [1-53,54]", "Lý Thường Kiệt [1-39,40]", "Hai Bà Trưng [1-31,40]"]
+},
+{
+  "id":"3",
+  "gio":"A3",
+  "name":"Lê văn Hải",
+  "cod":"3907",
+  "street":["Bạch Đằng", "Hàm Tử Quan", "Cầu Đất","Vọng Hà", "Chương Dương Độ", "từ 193 Phúc Tân", "203-1101 Hồng Hà", "Nguyễn Khiết", "Bạch Đằng- dốc vạn kiếp", "Vạn Kiếp"]
+},
+{
+  "id":"4",
+  "gio":"A4",
+  "name":"Bùi Thanh Tú",
+  "cod":"0996",
+  "street":["Lê duẩn", "trần quốc toàn", "hàm long" ,"vũ hữu lợi", "đỗ hành", "yết kiêu" ,"trương hán siêu" ,"thiền quang", "trần bình trọng", "liên trì", "trần nhân tông","nguyễn du" ,"hồ xuân hương" ,"hạ hồi", "nguyễn quyền"]
+},
+{
+  "id":"5",
+  "gio":"A5",
+  "name":"Hoàng Văn Quyền",
+  "cod":"1997",
+  "street":["Trần Nhật Duật", "nguyễn hữu huân", "đông thái ", "hàng buồm" , "đào duy từ ","hàng giầy" ,"mã mây","Lương Ngọc Quyến", "tông đản" ,"lê lai ","lê phụng hiểu","đinh lễ ","Đinh Tiên Hoàng", "hàng vôi ","lò sũ ","Hàng tre","hàng mắm","Lý Thái Tổ", "trần quang khải" ,"ngô quyền-17 ","chợ gạo ","ô quan chưởng ","tạ hiện"]
+},
+{
+  "id":"6",
+  "gio":"A6",
+  "name":"Vũ Văn Dũng",
+  "cod":"7218",
+  "street":["Hàng đậu","nguyễn thiếp","hàng khoai","hàng giấy","chợ đồng xuân","hàng lược","hàng mã","hàng rươi","hàng chai","hàng chiếu","lãn ông","hàng cá","chả cá","gầm cầu","ngõ gạch","nguyễn siêu","nguyễn thiện thuật","cao thắng","cầu đông","hàng đường" ]
+},
+{
+  "id":"7",
+  "gio":"A7",
+  "name":"Phạm Trung Hiếu",
+  "cod":"7108",
+  "street":["Hàng dầu", "hàng bè", "hàng bạc","gia ngư","cầu gỗ","đinh liệt", "lê thái tổ", "hàng đào","hàng ngang","hàng cân","hàng bồ","lương văn can","tô tịch","hàng quạt", "hàng gai", "hàng thiếc", "hàng hòm", "hàng mành","hàng trống", "bảo khánh", "hàng hành","nhà thờ","ấu triệu","ngõ huyện", "thọ xương", "chân cầm","yên thái","lý quốc sư", "hàng bông","hàng da","hội vũ"]
+},
+{
+  "id":"8",
+  "gio":"A8",
+  "name":"Lò Văn hiệp",
+  "cod":"2330",
+  "street":["Phúc xá","an xá","nghĩa dũng","tân ấp", "bảo linh", "nguyễn tư giản" ,"thanh yên","Phúc tân [1] 1-183", "[0] 2-160 Hồng hà <235"]
+},
+{
+  "id":"9",
+  "gio":"AA1",
+  "name":"Nguyễn Tuấn Anh",
+  "cod":"8427",
+  "street":["Phủ Doãn", "Quán Sứ", "Triệu Quốc Đạt", "Tràng Thi", "Đình Ngang", "Dã Tượng", "Cửa Nam", "Hỏa Lò", "Lý Thường Kiệt lẻ từ 41 chẵn từ 42", "Nhà Chung", "Trần Hưng Đạo (lẻ từ 53 trở lên, chẵn từ 56 trở lên)", "Hai Bà Trưng", "Quang Trung"]
+},
+{
+  "id":"10",
+  "gio":"AA2",
+  "name":"Nguyễn Tuấn Anh",
+  "cod":"8427",
+  "street":["Nguyễn Tri Phương", "Hoàng Diệu", "Điện Biên Phủ", "Tôn Thất Thiệp", "Trần Phú", "Thợ Nhuộm", "Chu Văn An", "Hoàng Văn Thụ (1 số điểm, dễ trùng với A5)", "Bà Huyện Thanh Quan", "Hùng Vương"]
+},
+{
+  "id":"11",
+  "gio":"AA3",
+  "name":"Đinh Trọng Nam",
+  "cod":"5101",
+  "street":["Nguyễn Thái học","cao bá quát", "Thanh miên","ngo yên thế","phô yên thế","quốc tư giám","văn miếu", "Lương sư A", "Lương sư B","Lương sư c","ngô sĩ liên","phổ giác","nguyễn khuyến","y miếu Thanh bảo","Lê hồng phong" ,"Lê trực"]
+},
+{
+  "id":"12",
+  "gio":"AA4",
+  "name":"Vũ Hoàng Việt",
+  "cod":"44534",
+  "street":["Tôn Đức Thắng (Lẻ)","Linh Quang", "Trần Quý Cáp","Nguyễn Như Đổ","Đình Ngang", "Cửa Nam","Nam Ngư ", "Phan Bội Châu"]
+},
+{
+  "id":"13",
+  "gio":"AA5",
+  "name":"Đỗ Văn Hoàn",
+  "cod":"4212",
+  "street":["Phan đình phùng", "quán thánh" , "nguyễn trường tộ", "phạm hồng thái", "nguyễn khắc nhu", "phó đức chính", "yên phụ ba đình", "hàng than ", "hồng phúc" , "nguyễn trung trực",  "hòe nhai", "phan huy ích", "hàng bún", "yên ninh", "cửa bắc", "châu long" , "đặng dung", "nguyễn biểu" , "đặng tất",  "trấn vũ" , "trúc bạch", "trúc lạc", "nam tràng", "trần tế xương", "mạc đĩnh chi", "lạc chính"]
+},
+{
+  "id":"14",
+  "gio":"AA6",
+  "name":"Nguyễn Anh Tú",
+  "cod":"61411",
+  "street":["Cát linh", "An trạch","đoàn thị điểm","Phan phù tiên","Vũ thạnh", "hàng cháo", "trịnh hoài đức"]
+},
+{
+  "id":"15",
+  "gio":"AK1",
+  "name":"Trần Ngọc Hiển",
+  "cod":"61411",
+  "street":["Dương Văn Bé", "Vĩnh Tuy", "Mạc Thị Bưởi"]
+},
+{
+  "id":"16",
+  "gio":"AK2",
+  "name":"Trần mạnh cường",
+  "cod":"1185",
+  "street":["Minh Khai lẻ (1-203)", "ngõ hòa bình"]
+},
+{
+  "id":"17",
+  "gio":"AK3",
+  "name":"Đỗ Hải Quân",
+  "cod":"2273",
+  "street":["Minh Khai chẵn 0-358", "mai động"]
+},
+{
+  "id":"18",
+  "gio":"AK4",
+  "name":"Nguyễn Mạnh Thắng",
+  "cod":"9901",
+  "street":["Minh Khai ( sổ lẻ ) 205 to trở lên"]
+},
+{
+  "id":"19",
+  "gio":"AK5",
+  "name":"Nguyễn Văn Quyền",
+  "cod":"5819",
+  "street":["Lạc Trung"]
+},
+{
+  "id":"20",
+  "gio":"AK6",
+  "name":"Nguyễn Văn Quyền",
+  "cod":"5819",
+  "street":["Minh khai chẵn 360- hết"]
+},
+{
+  "id":"21",
+  "gio":"AK7",
+  "name":"Nguyễn Văn Minh",
+  "cod":"7648",
+  "street":["Time City (458 MK)- tòa Park"]
+},
+{
+  "id":"22",
+  "gio":"AK8",
+  "name":"Lê Đức Trung",
+  "cod":"3296",
+  "street":["Time City (458 MK)- tòa Time"]
+},
+{
+  "id":"23",
+  "gio":"BK1",
+  "name":"Nguyễn Văn Trình",
+  "cod":"4915",
+  "street":["Lĩnh nam từ 1-105", "chẵn 1-188"]
+},
+{
+  "id":"24",
+  "gio":"BK2",
+  "name":"Võ Thanh Tùng",
+  "cod":"5225",
+  "street":["Đông Thiên", "Lĩnh Nam lẻ từ 183-417", "chung cư Đồng Phát"]
+},
+{
+  "id":"25",
+  "gio":"BK3",
+  "name":"Nguyễn Tiến Xuân",
+  "cod":"1107",
+  "street":["Lĩnh Nam 200- hết", "419- hết và Tây Trà"]
+},
+{
+  "id":"26",
+  "gio":"BK4",
+  "name":"Phạm Trúc Hà",
+  "cod":"9131",
+  "street":["Vĩnh hưng nhỏ <200"]
+},
+{
+  "id":"27",
+  "gio":"BK5",
+  "name":"Phạm Hồng Hiếu",
+  "cod":"5183",
+  "street":["Vĩnh Hưng > 200 và 105"]
+},
+{
+  "id":"28",
+  "gio":"BK7",
+  "name":"Cao Văn Thanh",
+  "cod":"6379",
+  "street":["Nguyễn Khoái từ > 300", "Thúy Lĩnh" ,"Khuyến Lương"]
+},
+{
+  "id":"29",
+  "gio":"BK8",
+  "name":"Đào Văn Toàn",
+  "cod":"6853",
+  "street":["Thanh Đàm","Thanh Lân", "Đại Đồng"]
+},
+{
+  "id":"30",
+  "gio":"AG1",
+  "name":"Nguyễn Ngọc Đạt",
+  "cod":"2678",
+  "street":["Kim Ngưu", "Yên Lạc"]
+},
+{
+  "id":"31",
+  "gio":"AG2",
+  "name":"Trịnh Văn Tư",
+  "cod":"2097",
+  "street":["Bạch Mai(số lẻ)"]
+},
+{
+  "id":"32",
+  "gio":"AG3",
+  "name":"Đỗ Vũ Phương",
+  "cod":"6475",
+  "street":["Bạch Mai(số chẵn)"]
+},
+{
+  "id":"33",
+  "gio":"AG4",
+  "name":"Đỗ Xuân Thể",
+  "cod":"0529",
+  "street":["Hồng Mai", "Quỳnh Mai", "Quỳnh Lôi", "Phố 8/3", "Tân Lập"]
+},
+{
+  "id":"34",
+  "gio":"AG7",
+  "name":"Thiều Viết Cầu",
+  "cod":"0232",
+  "street":["Thanh Nhàn", "Võ Thị Sáu", "Bùi Ngọc Dương", "ngõ Quỳnh"]
+},
+{
+  "id":"35",
+  "gio":"BG1",
+  "name":"Phan Thế Đạt",
+  "cod":"0845",
+  "street":["Tuệ tĩnh", "Triệu việt vương", "đoàn trần nghiệp", "bùi thị xuân","mai hắc đế"]
+},
+{
+  "id":"36",
+  "gio":"BG2",
+  "name":"Phùng Ngọc Tuấn",
+  "cod":"1659",
+  "street":["vân hồ", "tô hiến thành", "thể giao", "nguyễn đình chiểu"]
+},
+{
+  "id":"37",
+  "gio":"BG3",
+  "name":"Lê Xuân Kiên",
+  "cod":"0893",
+  "street":["Phố huế (chẵn)", "trần xuân soạn", "lê văn hưu","ngô thì nhậm"]
+},
+{
+  "id":"38",
+  "gio":"BG4",
+  "name":"Đỗ Hoài Anh",
+  "cod":"6683",
+  "street":["Thịnh Yên", "Yên Bái", "Chùa vua", "Trần Cao Vân", "Nguyễn Công Trứ"]
+},
+{
+  "id":"39",
+  "gio":"BG5",
+  "name":"Phạm Quang Trường",
+  "cod":"6340",
+  "street":["Dốc Thọ lão", "Lò Đúc (chẵn)", "Hương Viên"]
+},
+{
+  "id":"40",
+  "gio":"BG6",
+  "name":"Nguyễn Đức Trọng",
+  "cod":"71103",
+  "street":["Bạch Đằng", "Đầm Trấu", "Lãng Yên", "Nguyễn Khoái <300", "tây kết"]
+},
+{
+  "id":"41",
+  "gio":"BG7",
+  "name":"Vy Hồng Quang",
+  "cod":"5350",
+  "street":["Đại Cồ Việt", "đê Trần Khát Chân", "Lạc Nghiệp"]
+},
+{
+  "id":"42",
+  "gio":"BG8",
+  "name":"Nguyễn Văn Phú",
+  "cod":"7893",
+  "street":["Tạ Quang Bửu", "Bách Khoa"]
+},
+{
+  "id":"43",
+  "gio":"BG9",
+  "name":"Lê Thanh Tùng",
+  "cod":"6545",
+  "street":["Trần Đại Nghĩa", "Lê Thanh Nghị"]
+},
+{
+  "id":"44",
+  "gio":"BG10",
+  "name":"Phạm Văn Công",
+  "cod":"8909",
+  "street":["Lương Yên", "Hàng Chuối", "Lò Đúc lẻ", "Cảm Hội",  "Nguyễn Cao", "Nguyễn Huy Tự"]
+},
+{
+  "id":"45",
+  "gio":"BG11",
+  "name":"Nguyễn Ngọc Anh",
+  "cod":"2137",
+  "street":["Phố Huế lẻ", "Bà Triệu", "Thái Phiên","Ngõ Huế"]
+},
+{
+  "id":"46",
+  "gio":"KC",
+  "name":"Tạ Duy Nam",
+  "cod":"",
+  "street":["Phụ Kiện ô tô 888 - 122 Vĩnh Tuy","Lemino - 61 Lạc Trung"]
+},
+{
+  "id":"47",
+  "gio":"KC",
+  "name":"Nguyễn Duy Phương",
+  "cod":"",
+  "street":["Mịn Decor - 68/84 Võ Thị Sáu","Tiger shop - 622 Minh Khai","Tiic.vn2 - 131 Bạch Mai","nganguyen208", "phuthuy315","Quỳnh boutique"]
+},
+{
+  "id":"48",
+  "gio":"KC",
+  "name":"Lại Thế Mạnh",
+  "cod":"",
+  "street":["715 Minh Khai","737 Bạch Đằng","shopre - dương văn bé"]
+},
+{
+  "id":"49",
+  "gio":"KC",
+  "name":"Võ Duy Cương",
+  "cod":"",
+  "street":["Vinsmart - 250 Minh Khai"]
+},
+{
+  "id":"50",
+  "gio":"KC",
+  "name":"Đào Viết Điều",
+  "cod":"",
+  "street":["bibi - Đình đông","Phụ kiện ô tô, 220 nam dư"]
+},
+{
+  "id":"51",
+  "gio":"KC",
+  "name":"Trần Đăng Huya",
+  "cod":"",
+  "street":["TCS- 107 Vĩnh Hưng"]
+},
+{
+  "id":"52",
+  "gio":"KC",
+  "name":"Vừ Quốc Hoàng",
+  "cod":"",
+  "street":["Zera - Thanh lân"]
+},
+{
+  "id":"53",
+  "gio":"KC",
+  "name":"Ngô Quốc Bảo",
+  "cod":"",
+  "street":["huonghxt- ngõ 47 nam dư"]
+},
+{
+  "id":"54",
+  "gio":"KC",
+  "name":"Phạm Đức Nghi",
+  "cod":"",
+  "street":["Tuthuy - Ngõ 10 Quỳnh Lôi","NXQ - 44 Bùi Ngọc Dương","Trang kyo - Ngõ 10 Yên Lạc"]
+},
+{
+  "id":"55",
+  "gio":"KC",
+  "name":"Nguyễn Tiến Thành",
+  "cod":"",
+  "street":["thegioidoda - 250 Minh Khai","Mỹ phẩm vân nguyễn - ngõ 13 linh nam","Hà váy - 631 Minh khai","47 vân đồn","Kid toys"]
+},
+{
+  "id":"56",
+  "gio":"KC",
+  "name":"Đoàn Gia Bảo",
+  "cod":"",
+  "street":["Meomeo Phạm - ngõ 29 lê thanh nghị"," Đồ nghề an phát - 122 Vĩnh Tuy"," 67 Hàng bông","74 Lê Duẩn"]
+},
+{
+  "id":"57",
+  "gio":"KC",
+  "name":"nguyễn ngọc tiến",
+  "cod":"",
+  "street":["hinphap - Dương Văn Bé","Ngõ 95 Nam dư","113 Thanh lân"]
+},
+{
+  "id":"58",
+  "gio":"KC",
+  "name":"Lê Văn Thuận",
+  "cod":"",
+  "street":["Giày dương văn bé"]
+},
+{
+  "id":"59",
+  "gio":"KC",
+  "name":"Nguyễn Minh Khiêm",
+  "cod":"",
+  "street":["Ngõ 64 Lĩnh Nam","92 Vĩnh Hưng - Sao thái dương"]
+},
+{
+  "id":"60",
+  "gio":"KC",
+  "name":"",
+  "cod":"",
+  "street":["Lạc Trung","0962875500"," B3 ngõ 156 lạc trung khu nhà ở","Phường Vĩnh Tuy","(phường) Vĩnh Tuy","Quận Hai Bà Trưng","Hà Nội"]
+},
+{
+  "id":"61",
+  "gio":"KC",
+  "name":"Phùng Ngọc Tuấn",
+  "cod":"",
+  "street":["bangbangkids - 17 vân hồ"]
+},
+{
+  "id":"62",
+  "gio":"KC",
+  "name":"Nguyễn Văn Phú",
+  "cod":"",
+  "street":["Toán thầy đạt - Đại cồ việt","77 Đại Cồ Việt"]
+}
+];

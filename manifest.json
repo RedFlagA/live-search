@@ -1,0 +1,22 @@
+{
+    "name": "Live Search App",
+    "description": "Hello guys, I'm Developer.",
+    "manifest_version": 2,
+    "minimum_chrome_version": "28",
+    "offline_enabled": true,
+    "version": "0.3",
+    "permissions": [
+      {"fileSystem": ["write"]},
+      "alarms",
+      "storage"
+    ],
+    "app": {
+      "background": {
+        "scripts": ["js/empl.js"]
+      }
+    },
+    "icons": {
+      "16": "images/background.jpg",
+      "128": "images/background.jpg"
+    }
+  }
